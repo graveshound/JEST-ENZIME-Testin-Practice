@@ -1,8 +1,9 @@
 //import React, { Fragment } from 'react';
 //Funcional Components
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const PrimeraApp = ({saludo2="Valor por defecto"})=>{
+const PrimeraApp = ({saludo2})=>{
 
     const objeto={
         nombre: "Pedro Arce",
@@ -10,6 +11,10 @@ const PrimeraApp = ({saludo2="Valor por defecto"})=>{
     };
     console.log(saludo2)
     const saludo="Hola Mundo"
+
+    /*if (!saludo){
+        throw new Error("El Salud es Necesario")
+    }*/
 
     return  (
    /* <Fragment>
@@ -25,5 +30,8 @@ const PrimeraApp = ({saludo2="Valor por defecto"})=>{
     </>
     );
 }
+PrimeraApp.propTypes={
+    saludo: PropTypes.string.isRequired
 
+}
 export default PrimeraApp;
