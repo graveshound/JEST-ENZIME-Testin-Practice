@@ -9,4 +9,4 @@ console.log("Hola Mundo");
 
 const divRoot=document.querySelector("#root");
 
-ReactDom.render(<PrimeraApp/>,divRoot);
+ReactDom.render(<PrimeraApp />,divRoot);
