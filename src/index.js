@@ -11,4 +11,4 @@ console.log("Hola Mundo");
 const divRoot=document.querySelector("#root");
 
 //ReactDom.render(<PrimeraApp />,divRoot);
-ReactDom.render(<CounterApp value={42} />,divRoot);
+ReactDom.render(<CounterApp />,divRoot);
