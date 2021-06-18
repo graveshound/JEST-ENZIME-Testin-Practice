@@ -5,11 +5,8 @@ import PropTypes from 'prop-types';
 
 const PrimeraApp = ({saludo2, subtitulo})=>{
 
-    const objeto={
-        nombre: "Pedro Arce",
-        edad: 28
-    };
-    console.log(saludo2)
+    
+  
     const saludo="Hola Mundo"
 
     /*if (!saludo){
@@ -23,15 +20,15 @@ const PrimeraApp = ({saludo2, subtitulo})=>{
     </Fragment>
    */
     <>
-        <h1>{saludo}</h1>
-        <h1>{saludo2}</h1>
-        <pre>{JSON.stringify(objeto,null,3)}</pre>
-        <p>{subtitulo}</p>
+        <h1> {saludo} </h1>
+        <h1> {saludo2} </h1>
+        {/*<pre>{JSON.stringify(objeto,null,3)}</pre>*/}
+        <p> {subtitulo} </p>
     </>
     );
 }
 PrimeraApp.propTypes={
-    saludo: PropTypes.string.isRequired
+    saludo2: PropTypes.string.isRequired
 
 }
 PrimeraApp.defaultProps={
