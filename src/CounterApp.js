@@ -6,7 +6,7 @@ const CounterApp=({value})=>{
     //const state=useState('Goku');
     //console.log(state)
     //handleAdd
-    const [counter, setCounter]=useState(0);
+    const [counter, setCounter]=useState(value);
     const handleAdd=()=>{
         //setCounter(counter+1)
         setCounter((c)=>c+1)
